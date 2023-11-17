@@ -1,0 +1,27 @@
+usuario: sebastian
+edad: 11
+usuario: undefined
+edad: undefined
+usuario: undefined
+edad: undefined
+usuario: undefined
+edad: undefined
+usuario: esteban
+edad: 12
+usuario: undefined
+edad: undefined
+
+usuario: esteban
+edad: 12
+usuario: undefined
+edad: undefined
+usuario: esteban
+edad: 12
+usuario: undefined
+edad: undefined
+usuario: undefined
+edad: undefinedusuario: esteban
+edad: 9usuario: undefined
+edad: undefinedusuario: esteban
+edad: 9usuario: undefined
+edad: undefined

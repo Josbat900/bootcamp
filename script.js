@@ -17,7 +17,7 @@ const fs = require("fs")
 
 const http = require('http');
 
-const PORT = 3000;
+const PORT = 3001;
 // request
 const server = http.createServer((req, res) => {
   if (req.method === 'GET') {
@@ -30,18 +30,13 @@ const server = http.createServer((req, res) => {
 
     if(edad>18){
       res.end(`hola ${nombre}, eres mayor de edad y tienes ${edad}.`)
+      fs.appendFileSync("mayoresDeEdad.txt",`usuario: ${nombre}\nedad: ${edad}`)
       
-    }else
-    res.end(`${nombre } aun tienes ${edad}, lastimosamente no puedes acceder\n`);
-    
-    
-    if(crearArchivo == "si"){
-      fs.writeFile(`${nombre}.txt`, `${edad} tu edad es ${edad}`,()=>{
-        
-        console.log("funciona")
-      })
-      
+    }else{
+      res.end(`${nombre } aun tienes ${edad}, lastimosamente no puedes acceder`)
+      fs.appendFileSync("menoresDeEdad.txt",`usuario: ${nombre}\nedad: ${edad}`)
     }
+    
 
   } else {
     res.writeHead(404, { 'Content-Type': 'text/plain' });

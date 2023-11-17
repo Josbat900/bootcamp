@@ -1,0 +1,7 @@
+usuario: sebastian
+edad: 19
+
+usuario: carlos
+edad: 19
+usuario: esteban
+edad: 20
